@@ -1,0 +1,26 @@
+{
+  "name": "Review",
+  "type": "object",
+  "properties": {
+    "product_id": {
+      "type": "string",
+      "description": "ID del prodotto recensito"
+    },
+    "rating": {
+      "type": "number",
+      "description": "Valutazione da 1 a 5 stelle"
+    },
+    "comment": {
+      "type": "string",
+      "description": "Commento testuale"
+    },
+    "author_name": {
+      "type": "string",
+      "description": "Nome dell'autore"
+    }
+  },
+  "required": [
+    "product_id",
+    "rating"
+  ]
+}

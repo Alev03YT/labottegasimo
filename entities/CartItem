@@ -1,0 +1,32 @@
+{
+  "name": "CartItem",
+  "type": "object",
+  "properties": {
+    "product_id": {
+      "type": "string",
+      "description": "ID del prodotto"
+    },
+    "product_name": {
+      "type": "string",
+      "description": "Nome del prodotto"
+    },
+    "product_image": {
+      "type": "string",
+      "description": "Immagine del prodotto"
+    },
+    "price": {
+      "type": "number",
+      "description": "Prezzo unitario"
+    },
+    "quantity": {
+      "type": "number",
+      "default": 1,
+      "description": "Quantit\u00e0"
+    }
+  },
+  "required": [
+    "product_id",
+    "product_name",
+    "price"
+  ]
+}

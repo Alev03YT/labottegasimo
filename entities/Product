@@ -1,0 +1,63 @@
+{
+  "name": "Product",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "Nome del prodotto"
+    },
+    "description": {
+      "type": "string",
+      "description": "Descrizione del prodotto"
+    },
+    "price": {
+      "type": "number",
+      "description": "Prezzo in euro"
+    },
+    "category": {
+      "type": "string",
+      "enum": [
+        "borse",
+        "abbigliamento_donna",
+        "abbigliamento_uomo",
+        "abbigliamento_bambino",
+        "accessori",
+        "amigurumi",
+        "gioielli"
+      ],
+      "description": "Categoria del prodotto"
+    },
+    "image_url": {
+      "type": "string",
+      "description": "URL immagine del prodotto"
+    },
+    "in_stock": {
+      "type": "boolean",
+      "default": true,
+      "description": "Disponibilit\u00e0"
+    },
+    "quantity": {
+      "type": "number",
+      "default": 0,
+      "description": "Quantit\u00e0 disponibile"
+    },
+    "featured": {
+      "type": "boolean",
+      "default": false,
+      "description": "Prodotto in evidenza"
+    },
+    "materials": {
+      "type": "string",
+      "description": "Materiali utilizzati"
+    },
+    "colors": {
+      "type": "string",
+      "description": "Colori disponibili"
+    }
+  },
+  "required": [
+    "name",
+    "price",
+    "category"
+  ]
+}

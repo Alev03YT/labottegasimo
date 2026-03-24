@@ -1,0 +1,62 @@
+{
+  "name": "Order",
+  "type": "object",
+  "properties": {
+    "items": {
+      "type": "array",
+      "description": "Prodotti ordinati",
+      "items": {
+        "type": "object",
+        "properties": {
+          "product_id": {
+            "type": "string"
+          },
+          "product_name": {
+            "type": "string"
+          },
+          "price": {
+            "type": "number"
+          },
+          "quantity": {
+            "type": "number"
+          }
+        }
+      }
+    },
+    "total": {
+      "type": "number",
+      "description": "Totale ordine"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "in_attesa",
+        "confermato",
+        "spedito",
+        "consegnato"
+      ],
+      "default": "in_attesa",
+      "description": "Stato dell'ordine"
+    },
+    "customer_name": {
+      "type": "string",
+      "description": "Nome del cliente"
+    },
+    "customer_email": {
+      "type": "string",
+      "description": "Email del cliente"
+    },
+    "shipping_address": {
+      "type": "string",
+      "description": "Indirizzo di spedizione"
+    },
+    "notes": {
+      "type": "string",
+      "description": "Note aggiuntive"
+    }
+  },
+  "required": [
+    "items",
+    "total"
+  ]
+}
