@@ -4,12 +4,13 @@ import { getFirestore } from 'firebase/firestore'
 import { getStorage } from 'firebase/storage'
 
 const firebaseConfig = {
-  apiKey: "INSERISCI_API_KEY",
-  authDomain: "INSERISCI_AUTH_DOMAIN",
-  projectId: "INSERISCI_PROJECT_ID",
-  storageBucket: "INSERISCI_STORAGE_BUCKET",
-  messagingSenderId: "INSERISCI_MESSAGING_SENDER_ID",
-  appId: "INSERISCI_APP_ID"
+  apiKey: "AIzaSyABHJn6ooogyYou8U75wBzFmHaMyFjk278",
+  authDomain: "labottegasimo.firebaseapp.com",
+  projectId: "labottegasimo",
+  storageBucket: "labottegasimo.firebasestorage.app",
+  messagingSenderId: "869674101293",
+  appId: "1:869674101293:web:493b0004fd598600f3a6a4",
+  measurementId: "G-JYVJ0LF5YE"
 }
 
 const app = initializeApp(firebaseConfig)
